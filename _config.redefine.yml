@@ -1,16 +1,47 @@
 info:
-  title: WE COME
+  title: 子豪的小破站
   author: hzihhuang
-  
+
+# 主题
 colors:
-  primary: '#DFBD7D'
+
+# 评论系统
+comment:
+  enable: false
+
+# 导航栏配置
+navbar:
+  auto_hide: true
+  links:
+    Home:
+      path: /
+    Tags:
+      path: /tags/
+    Categories:
+      path: /categories/
+  categories:
+    Categories:
+      icon: https://img.alicdn.com/imgextra/i3/O1CN01bQ0kTe1EBOjKuXpqp_!!6000000000313-2-tps-200-202.png
+      path: /categories/
+  tags:
+    Tags:
+      icon: https://img.alicdn.com/imgextra/i3/O1CN01bQ0kTe1EBOjKuXpqp_!!6000000000313-2-tps-200-202.png
+      path: /tags/
+
+# 页脚
+footer:
+  start: 2023/8/11 17:40:14
 
 # 全局配置
 global:
   chinese:
     enable: true
-
-# 评论系统
-comment:
-  # 关闭评论
-  enable: false
+  hover:
+    scale: true
+  scroll_progress:
+    bar: true
+  busuanzi_counter:
+    enable: false
+  icp:
+    enable: true
+    number: 粤ICP备2021000000号

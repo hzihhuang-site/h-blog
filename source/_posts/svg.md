@@ -1,5 +1,9 @@
 ---
-title: SVG
+title: SVG 深入浅出
+date: 2022-12-07 18:57:32
+tags: CSS
+categories: 前端
+cover: https://img2.baidu.com/it/u=3541918504,2197745291&fm=253&fmt=auto&app=138&f=JPEG
 ---
 ### 一、SVG 简介
 
