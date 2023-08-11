@@ -32,6 +32,9 @@ navbar:
     相册:
       icon: fa-solid fa-image
       path: /masonry/
+    GitHub:
+      icon: fa-brands fa-github
+      path: https://github.com/Super-ZiHao
   categories:
     Categories:
       icon: https://img.alicdn.com/imgextra/i3/O1CN01bQ0kTe1EBOjKuXpqp_!!6000000000313-2-tps-200-202.png
@@ -41,7 +44,7 @@ navbar:
       icon: https://img.alicdn.com/imgextra/i3/O1CN01bQ0kTe1EBOjKuXpqp_!!6000000000313-2-tps-200-202.png
       path: ./tags
 
-
+# 首页
 home:
   sidebar: # 侧边栏
     position: right
@@ -57,15 +60,15 @@ home:
         icon: fa-solid fa-image
         path: ./masonry
 
-# 第一屏
+# 首页第一屏
 home_banner:
   style: fixed
   title: 祝你每天开心快乐。
   subtitle:
     text: ['内心丰盈者，独行也如众。', '理想主义的少年永远不会向现实招安。']
   # image: # 背景图
-  #   light:
-  #   dark:
+  #   light: ./source/images/wallhaven-wqery6-light.webp
+  #   dark: ./source/images/wallhaven-wqery6-drak.webp
   social_links: # 社交
     enable: true
     links:
@@ -78,3 +81,7 @@ footer:
 # 评论系统
 comment:
   enable: false
+
+# 搜索
+search:
+  enable: true
