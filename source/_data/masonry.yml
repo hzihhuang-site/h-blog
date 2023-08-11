@@ -1,8 +1,8 @@
-- image: https://picsum.photos/2000/1800
-  title: 图一
-  description: 图一介绍
- 
-- image: https://picsum.photos/id/12/2500/1800
-  title: 图二
-  description: 图二介绍
+- image: ../images/photos/1.JPG
+  title: 公司门口
+  description: 和部门几个设计小伙伴一起提前翘班去吃火锅
+
+- image: ../images/photos/2.JPG
+  title: 桂林特种兵四人行
+  description: 和同事一起旅游
  

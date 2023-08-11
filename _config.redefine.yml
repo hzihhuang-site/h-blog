@@ -40,7 +40,7 @@ navbar:
 home:
   sidebar: # 侧边栏
     position: right
-    announcement: 天行健,君子以自强不息 # 公告
+    announcement: 做一个温柔的人，浅浅笑，轻轻爱 # 公告
     links: # 左侧导航栏
       标签:
         icon: fa-solid fa-tags
@@ -55,9 +55,22 @@ home:
 # 首页第一屏
 home_banner:
   style: fixed
-  title: 祝你每天开心快乐。
+  title: 愿我们想要的都得到，得到的都美好。
   subtitle:
-    text: ['内心丰盈者，独行也如众。', '理想主义的少年永远不会向现实招安。']
+    text: [
+      '内心丰盈者，独行也如众。',
+      '理想的生活需要一点热爱和心动',
+      '理想主义的少年永远不会向现实招安。',
+      '在人生的道路上，想哭就哭，想笑就笑吧，但是千万别忘记了赶路',
+      '喜欢就争取，的到就珍惜，错过就忘记。',
+      '你所期盼的都会稳稳妥妥的到来'
+    ]
+    typing_speed: 40
+    backing_speed: 40
+    starting_delay: 800 # 开始延迟（毫秒）
+    backing_delay: 5000 # 退格延迟（毫秒）
+    loop: true # 是否循环
+    smart_backspace: true #是否智能退格
   # image: # 背景图
   #   light: ./source/images/wallhaven-wqery6-light.webp
   #   dark: ./source/images/wallhaven-wqery6-drak.webp
