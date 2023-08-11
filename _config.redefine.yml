@@ -35,14 +35,6 @@ navbar:
     GitHub:
       icon: fa-brands fa-github
       path: https://github.com/Super-ZiHao
-  categories:
-    Categories:
-      icon: https://img.alicdn.com/imgextra/i3/O1CN01bQ0kTe1EBOjKuXpqp_!!6000000000313-2-tps-200-202.png
-      path: ./categories
-  tags:
-    Tags:
-      icon: https://img.alicdn.com/imgextra/i3/O1CN01bQ0kTe1EBOjKuXpqp_!!6000000000313-2-tps-200-202.png
-      path: ./tags
 
 # 首页
 home:
