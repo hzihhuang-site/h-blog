@@ -1,7 +1,7 @@
 ---
 title: CSS 技巧
-tags: CSS
-categories: 前端
+tags: [Style]
+categories: [前端, CSS]
 cover: https://www.leixue.com/uploads/2018/09/CSS.jpg
 ---
 [浏览器兼容性查询地址](https://caniuse.com/)

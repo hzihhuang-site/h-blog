@@ -1,7 +1,7 @@
 ---
 title: mysql
-tags: 数据库
-categories: 后端
+tags: [数据库, 语言]
+categories: [后端, 数据库]
 cover: https://img0.baidu.com/it/u=730256309,1700139135&fm=253&fmt=auto&app=138&f=JPEG
 date: 2023-05-10 21:20:27
 ---

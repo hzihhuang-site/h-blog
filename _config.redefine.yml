@@ -1,37 +1,3 @@
-info:
-  title: 子豪的小破站
-  author: hzihhuang
-
-# 主题
-colors:
-
-# 评论系统
-comment:
-  enable: false
-
-# 导航栏配置
-navbar:
-  auto_hide: true
-  links:
-    Home:
-      path: /
-    Tags:
-      path: /tags/
-    Categories:
-      path: /categories/
-  categories:
-    Categories:
-      icon: https://img.alicdn.com/imgextra/i3/O1CN01bQ0kTe1EBOjKuXpqp_!!6000000000313-2-tps-200-202.png
-      path: /categories/
-  tags:
-    Tags:
-      icon: https://img.alicdn.com/imgextra/i3/O1CN01bQ0kTe1EBOjKuXpqp_!!6000000000313-2-tps-200-202.png
-      path: /tags/
-
-# 页脚
-footer:
-  start: 2023/8/11 17:40:14
-
 # 全局配置
 global:
   chinese:
@@ -42,6 +8,73 @@ global:
     bar: true
   busuanzi_counter:
     enable: false
-  icp:
+
+# 基本信息
+info:
+  title: 子豪的小破站
+  author: hzihhuang
+  url: https://super-zihao.github.io/blog
+
+# 默认图片
+defaults:
+  avatar: https://picsum.photos/300
+
+# 顶部导航栏配置
+navbar:
+  auto_hide: false # 顶部是否自动隐藏
+  links:
+    标签:
+      icon: fa-solid fa-tags
+      path: /tags/
+    分类:
+      icon: fa-solid fa-folder
+      path: /categories/
+    相册:
+      icon: fa-solid fa-image
+      path: /masonry/
+  categories:
+    Categories:
+      icon: https://img.alicdn.com/imgextra/i3/O1CN01bQ0kTe1EBOjKuXpqp_!!6000000000313-2-tps-200-202.png
+      path: ./categories
+  tags:
+    Tags:
+      icon: https://img.alicdn.com/imgextra/i3/O1CN01bQ0kTe1EBOjKuXpqp_!!6000000000313-2-tps-200-202.png
+      path: ./tags
+
+
+home:
+  sidebar: # 侧边栏
+    position: right
+    announcement: 天行健,君子以自强不息 # 公告
+    links: # 左侧导航栏
+      标签:
+        icon: fa-solid fa-tags
+        path: ./tags
+      分类:
+        icon: fa-solid fa-folder
+        path: ./categories
+      相册:
+        icon: fa-solid fa-image
+        path: ./masonry
+
+# 第一屏
+home_banner:
+  style: fixed
+  title: 祝你每天开心快乐。
+  subtitle:
+    text: ['内心丰盈者，独行也如众。', '理想主义的少年永远不会向现实招安。']
+  # image: # 背景图
+  #   light:
+  #   dark:
+  social_links: # 社交
     enable: true
-    number: 粤ICP备2021000000号
+    links:
+      [github]: https://github.com/Super-ZiHao
+
+# 页脚
+footer:
+  start: 2023/8/11 17:40:14
+
+# 评论系统
+comment:
+  enable: false

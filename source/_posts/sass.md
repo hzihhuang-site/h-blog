@@ -1,7 +1,7 @@
 ---
 title: SASS or SCSS
-tags: CSS
-categories: 前端
+tags: [Style]
+categories: [前端, CSS]
 cover: https://img1.baidu.com/it/u=1590939100,312674939&fm=253&fmt=auto&app=138&f=GIF
 date: 2022-03-16 8:00:47
 ---

@@ -1,7 +1,7 @@
 ---
 title: TypeScript
-tags: 语言
-categories: 前端
+tags: [语言]
+categories: [前端, JavaScript]
 cover: https://img2.baidu.com/it/u=2238049457,3919805703&fm=253&fmt=auto&app=138&f=JPEG
 date: 2022-6-07 12:37:52
 ---

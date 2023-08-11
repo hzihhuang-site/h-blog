@@ -8,5 +8,6 @@ public/
 _multiconfig.yml
 
 #lock
+packge-lock.json
 yarn.lock
 pnpm-lock.yaml
