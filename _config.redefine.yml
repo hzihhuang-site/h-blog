@@ -1,0 +1,16 @@
+info:
+  title: WE COME
+  author: hzihhuang
+  
+colors:
+  primary: '#DFBD7D'
+
+# 全局配置
+global:
+  chinese:
+    enable: true
+
+# 评论系统
+comment:
+  # 关闭评论
+  enable: false
