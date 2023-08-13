@@ -11,16 +11,15 @@ global:
 
 # 基本信息
 info:
-  title: Welcome
+  title: Yolo乀Blog
   author: hzihhuang
   url: https://super-zihao.github.io/blog
 
 # 默认图片
 defaults:
   avatar: ./images/photos/渔人码头1.jpg
-  logo: ./images/logo.jpg
-  favicon: ./images/logo.jpg
-
+  logo: ./images/logo.png
+  favicon: ./images/logo.png
 # 颜色配置
 colors:
   primary: #FF9671
@@ -54,7 +53,7 @@ home:
     links: # 左侧导航栏
       归档:
         icon: fa-solid fa-archive
-        path: /archives/
+        path: ./archives
       标签:
         icon: fa-solid fa-tags
         path: ./tags
@@ -84,9 +83,9 @@ home_banner:
     backing_delay: 5000 # 退格延迟（毫秒）
     loop: true # 是否循环
     smart_backspace: true #是否智能退格
-  # image: # 背景图
-  #   light: ./source/images/wallhaven-wqery6-light.webp
-  #   dark: ./source/images/wallhaven-wqery6-drak.webp
+  image: # 背景图
+    light: https://images.pexels.com/photos/290263/pexels-photo-290263.jpeg
+    dark: https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg
   social_links: # 社交
     enable: true
     links:
