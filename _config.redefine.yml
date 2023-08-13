@@ -84,8 +84,8 @@ home_banner:
     loop: true # 是否循环
     smart_backspace: true #是否智能退格
   image: # 背景图
-    light: https://images.pexels.com/photos/290263/pexels-photo-290263.jpeg
-    dark: https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg
+    light: https://images.pexels.com/photos/290263/pexels-photo-290263.jpeg?auto=compress&cs=tinysrgb&w=1600
+    dark: https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&w=1600
   social_links: # 社交
     enable: true
     links:
@@ -127,4 +127,4 @@ comment:
 inject:
   enable: true
   footer: 
-    - <link rel="stylesheet" href="/blog/css/footer.css?1">
+    - <link rel="stylesheet" href="/blog/css/footer.css?1" />
