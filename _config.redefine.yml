@@ -29,18 +29,18 @@ colors:
 navbar:
   auto_hide: true # 顶部是否自动隐藏
   links:
+    归档:
+      icon: fa-regular fa-archive
+      path: /archives/
     标签:
-      icon: fa-solid fa-tags
+      icon: fa-regular fa-tags
       path: /tags/
     分类:
-      icon: fa-solid fa-folder
+      icon: fa-regular fa-folder
       path: /categories/
     相册:
-      icon: fa-solid fa-image
+      icon: fa-regular fa-image
       path: /masonry/
-    GitHub:
-      icon: fa-brands fa-github
-      path: https://github.com/Super-ZiHao
     其他:
       icon: fa-solid fa-link
       submenus:
@@ -52,6 +52,9 @@ home:
     position: right
     announcement: 做一个温柔的人，浅浅笑，轻轻爱 # 公告
     links: # 左侧导航栏
+      归档:
+        icon: fa-solid fa-archive
+        path: /archives/
       标签:
         icon: fa-solid fa-tags
         path: ./tags
@@ -61,6 +64,9 @@ home:
       相册:
         icon: fa-solid fa-image
         path: ./masonry
+      GitHub:
+        icon: fa-brands fa-github
+        path: https://github.com/Super-ZiHao
 
 # 首页第一屏
 home_banner:

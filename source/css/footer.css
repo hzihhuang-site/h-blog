@@ -2,3 +2,15 @@
 .info-item.theme-info {
   display: none;
 }
+.footer {
+  padding-left: 20px;
+}
+.footer .copyright-info,
+.footer div:last-child {
+  text-align: left;
+}
+
+/* 头部 navbar 文案不换行 */
+.navbar-content .right {
+  white-space: nowrap;
+}

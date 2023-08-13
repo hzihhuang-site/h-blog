@@ -6,6 +6,8 @@ cover: https://img2.baidu.com/it/u=2238049457,3919805703&fm=253&fmt=auto&app=138
 date: 2022-6-07 12:37:52
 excerpt: TypeScript 是 JavaScript 的一个超集，主要提供了静态类型系统，在开发阶段报错，这样有利于提早发现错误，避免使用时报错。以及对 ES6 的支持，它由 Microsoft 开发，代码开源于 GitHub 上。
 ---
+> 阮一峰更新了 [TypeScript](https://wangdoc.com/typescript/intro) 的教程，内容更全易懂
+
 # 一、数据类型。
 
 ## 1、布尔值 
