@@ -1,0 +1,4 @@
+/* 隐藏 footer 左侧 */
+.info-item.theme-info {
+  display: none;
+}

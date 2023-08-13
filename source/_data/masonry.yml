@@ -1,8 +1,32 @@
-- image: ../images/photos/1.jpg
-  title: 公司门口
-  description: 和部门几个设计小伙伴一起提前翘班去吃火锅
+- image: ../images/photos/家1.jpg
+  title: 在老家
+  description: 2022年10月 国庆回家
 
-- image: ../images/photos/2.jpg
+- image: ../images/photos/家2.jpg
+  title: 在老家
+  description: 2022年10月 国庆回家
+
+- image: ../images/photos/东西冲1.jpg
+  title: 深圳东西涌
+  description: 2023年2月 徒步一日游
+
+- image: ../images/photos/天文台1.jpg
+  title: 深圳天文台
+  description: 2023年2月 徒步一日游
+
+- image: ../images/photos/天文台2.jpg
+  title: 深圳天文台
+  description: 2023年2月 徒步一日游
+
+- image: ../images/photos/桂林.jpg
   title: 桂林特种兵四人行
   description: 和同事一起旅游
+ 
+- image: ../images/photos/渔人码头1.jpg
+  title: 顺德一日游
+  description: 2023年8月 渔人码头
+ 
+- image: ../images/photos/渔人码头2.jpg
+  title: 顺德一日游
+  description: 2023年8月 渔人码头
  

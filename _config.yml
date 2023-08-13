@@ -106,3 +106,9 @@ deploy:
   branch: gh-pages
   repo: https://github.com/Super-ZiHao/blog
   message: docs一键部署
+
+all_minifier: true # 打包压缩插件使用 hexo-all-minifier
+image_minifier:
+  interlaced: true # 用于渐进式渲染的隔行 gif
+  multipass: true # 多次优化 svg，直到完全优化
+  progressive: true # 无损转换为渐进式

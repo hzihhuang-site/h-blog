@@ -4,6 +4,7 @@ tags: [框架, NodeJs]
 categories: [后端, NodeJS]
 cover: https://img0.baidu.com/it/u=732048776,2472344964&fm=253&fmt=auto
 date: 2023-04-20 16:00:47
+excerpt: Nest (NestJS) 是一个用于构建高效、可扩展的 Node.js 服务器端应用的框架。
 ---
 # NestJS
 

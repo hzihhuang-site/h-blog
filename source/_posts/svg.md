@@ -4,6 +4,7 @@ date: 2022-12-07 18:57:32
 tags: [HTML, Style]
 categories: [前端, HTML]
 cover: https://img2.baidu.com/it/u=3541918504,2197745291&fm=253&fmt=auto&app=138&f=JPEG
+excerpt: SVG 是 W3C 推出的基于 XML 的二维矢量图形标准，也就是一种用于描述二维的矢量图形。SVG 可以提供高质量的矢量图形渲染，同时由于支持 JavaScript 和文档对象模型，SVG 图形通常具有强大的交互能力。
 ---
 ### 一、SVG 简介
 
