@@ -104,6 +104,8 @@ articles:
   author_label:
     enable: true
     auto: true
+  recommendation: # 推荐文章
+    enable: true
 
 # 评论系统
 comment:
@@ -135,22 +137,22 @@ plugins:
     enable: true
     type: fixed
     audios:
-      - name: 亦是此间少年
-        artist: 枯木逢春
-        url: http://m801.music.126.net/20230813230518/cb01b844c329308e2db0d8beecda5ec8/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/28557785108/6fcc/5910/3467/7e102f2714de10db6bdbc32fe4df1f74.mp3
-        cover: https://p1.music.126.net/415A5Xt3bUegx4vyiY8dNQ==/109951164821961505.jpg?param=130y130
-      - name: 盐 (Witch’s Condiment)
-        artist: 沈以诚
-        url: http://m7.music.126.net/20230813224604/c6315f3f74291e5e9bbe10703c316c71/ymusic/obj/w5zDlMODwrDDiGjCn8Ky/13398496936/4d0b/7f7d/f1e8/c89aaa5f56a40b6d3bf1c16098ede913.mp3 # 歌曲地址
-        cover: https://p1.music.126.net/gKb2PcbOKD6u89yRt_9HrQ==/109951165347972122.jpg?param=130y130
-      - name: 世界上有两个我
-        artist: 孙天宇
-        url: http://m801.music.126.net/20230813225900/4a3e508e1b527b67c7408b5ec0dab6b8/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/22444255676/c912/0479/d1fe/96cdac6a3a8c5f043ddd0287f81eed03.mp3
-        cover: https://p2.music.126.net/b81aUcQttISSWhTUOn8FcA==/109951168090229401.jpg?param=130y130
-      - name: 夜色滚汤
-        artist: 烦烦
-        url: http://m801.music.126.net/20230813230243/d1ce9c8b67b06b07878f362f2a01f199/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/20461647070/6054/80ef/ec8e/b2c84d8d3a83cf47bc4d72a66e15f246.mp3
-        cover: https://p2.music.126.net/UNQ0zGmQEhaIwh2ngGmaqw==/109951167964721730.jpg?param=177y177
+      # - name: 亦是此间少年
+      #   artist: 枯木逢春
+      #   url: 
+      #   cover: https://p1.music.126.net/415A5Xt3bUegx4vyiY8dNQ==/109951164821961505.jpg?param=130y130
+      # - name: 盐 (Witch’s Condiment)
+      #   artist: 沈以诚
+      #   url: http://m7.music.126.net/20230813224604/c6315f3f74291e5e9bbe10703c316c71/ymusic/obj/w5zDlMODwrDDiGjCn8Ky/13398496936/4d0b/7f7d/f1e8/c89aaa5f56a40b6d3bf1c16098ede913.mp3 # 歌曲地址
+      #   cover: https://p1.music.126.net/gKb2PcbOKD6u89yRt_9HrQ==/109951165347972122.jpg?param=130y130
+      # - name: 世界上有两个我
+      #   artist: 孙天宇
+      #   url: http://m801.music.126.net/20230813225900/4a3e508e1b527b67c7408b5ec0dab6b8/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/22444255676/c912/0479/d1fe/96cdac6a3a8c5f043ddd0287f81eed03.mp3
+      #   cover: https://p2.music.126.net/b81aUcQttISSWhTUOn8FcA==/109951168090229401.jpg?param=130y130
+      # - name: 夜色滚汤
+      #   artist: 烦烦
+      #   url: http://m801.music.126.net/20230813230243/d1ce9c8b67b06b07878f362f2a01f199/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/20461647070/6054/80ef/ec8e/b2c84d8d3a83cf47bc4d72a66e15f246.mp3
+      #   cover: https://p2.music.126.net/UNQ0zGmQEhaIwh2ngGmaqw==/109951167964721730.jpg?param=177y177
       # - name:
       #   artist:
       #   url: 

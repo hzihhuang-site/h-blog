@@ -2,7 +2,7 @@
 title: CSS 技巧
 tags: [Style]
 categories: [前端, CSS]
-cover: https://www.leixue.com/uploads/2018/09/CSS.jpg
+cover: https://img0.baidu.com/it/u=2653173828,153052962&fm=253&fmt=auto&app=138&f=JPEG?w=947&h=500
 date: 2023-02-13 20:10:42
 excerpt: 积少成多，一些 CSS 有意思的东西
 ---
