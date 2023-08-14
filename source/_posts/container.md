@@ -10,6 +10,8 @@ excerpt: 在响应式布局布局中，经常使用媒体查询（Media Queries�
 <!-- # CSS container 容器查询 -->
 
 >早在2022年9月就发现了这个新特性，只是当时还处于测试阶段，今天一看大部分浏览器已经支持上了。是时候学习它了😎😎😎
+>
+>参考 [MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_container_queries)
 
 ## 背景
 > 在响应式布局布局中，经常使用 `媒体查询` 来检测视窗的宽高，实现自元素样式的自动调整。但是在一些页面设计中，元素的容器尺寸发生变化时，元素的样式也需要随之变化。很显然，媒体查询无法支持这种场景。为了解决这类问题，CSS 增加了一个新的特性 `容器查询`。它使你能够根据元素容器的大小应用样式。
@@ -35,15 +37,15 @@ excerpt: 在响应式布局布局中，经常使用媒体查询（Media Queries�
 
 ```scss
 .box { font-size: 1em; }
-/* 前提是 .card 这个元素是查询容器 */
+/* 前提是 .parent 这个元素是查询容器 */
 @container (min-width: 700px) {
-  .box { font-size: 2em; } // 如果 .box 宽度大于 700px 则生效
+  .parent .box { font-size: 2em; } // 如果 .parent 宽度大于 700px 则生效
 }
 ```
 ### 2、container-type 定义查询容器
 
 ```scss
-.box { container-type: size; }
+.parent { container-type: size; }
 /*
 	size：查询将基于容器的行向和块向尺度，将布局、样式和大小的限制应用于容器。
   inline-size：查询将基于容器的行向尺度，将布局、样式和行向大小的限制应用于元素。
@@ -53,17 +55,15 @@ excerpt: 在响应式布局布局中，经常使用媒体查询（Media Queries�
 ### 3、container-name 查询容器别名
 
 ```scss
-.box,
-.box2 {
-  font-size: 1em;
+.parent,
+.parent2 {
   container-type: size;
 }
-.box2 { container-name: zihao; } // 定义查询容器别名
-@container zihao (min-width: 700px) { // 指定查询 zihao 容器
-  .box { // 不生效
-    font-size: 3em;
-  }
-  .box2 {
+.parent2 { container-name: zihao; } // 定义查询容器别名
+.box { font-size: 1em }
+// 指定查询 zihao 容器, 此时 .parent 下的 .box 元素不会有任何变化
+@container zihao (min-width: 700px) { 
+  .box {
     font-size: 2em;
   }
 }

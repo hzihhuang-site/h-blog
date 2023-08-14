@@ -37,13 +37,14 @@ navbar:
     分类:
       icon: fa-regular fa-folder
       path: /categories/
-    相册:
-      icon: fa-regular fa-image
-      path: /masonry/
+    关于我:
+      icon: fa-regular fa-user
+      path: /about/
     其他:
       icon: fa-solid fa-link
       submenus:
         特色组件: https://super-zihao.github.io/HDesign
+        照片墙: /masonry/
 
 # 首页
 home:
@@ -60,9 +61,9 @@ home:
       分类:
         icon: fa-solid fa-folder
         path: ./categories
-      相册:
-        icon: fa-solid fa-image
-        path: ./masonry
+      关于我:
+        icon: fa-solid fa-user
+        path: ./about
 
 # 首页第一屏
 home_banner:
