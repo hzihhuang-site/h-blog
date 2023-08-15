@@ -1,5 +1,5 @@
 ---
-title: redux
+title: Redux
 tags: [React生态]
 categories: [前端, React]
 cover: https://pic3.zhimg.com/v2-d9d2770fc833e02572dc4b4e250359bf_1440w.jpg

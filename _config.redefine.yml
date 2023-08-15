@@ -93,8 +93,8 @@ home_banner:
       [github]: https://github.com/Super-ZiHao
       [fa-solid fa-envelope]: mailto:hzihhuang@gmail.com
     qrs:
-      [weixin]: ./assets/images/configImgs/微信二维码.jpg
-      [qq]: ./assets/images/configImgs/QQ二维码.jpg
+      [weixin]: ./assets/images/微信二维码.jpg
+      [qq]: ./assets/images/QQ二维码.jpg
 
 # 页脚
 footer:
