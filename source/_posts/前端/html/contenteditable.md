@@ -6,12 +6,17 @@ cover: https://img0.baidu.com/it/u=2057926739,1137712614&fm=253&fmt=auto&app=138
 date: 2023-08-15 13:17:09
 excerpt: 最近在工作上使用到了这个属性，那就在这简单的记录一下吧。使用 contenteditable 属性时,浏览器会有三种不同的表现形式...
 ---
-## 前置学习
+
+## 前言
+最近在工作上使用到了这个属性，那就在这简单的记录一下吧。
+使用 contenteditable 属性时,浏览器会有三种不同的表现形式, 每种形式都有着自己的特色。
+文章末尾写了一个有意思的 demo 感兴趣可以看一下。
+## 先要了解它
 > 我们最常用的输入文本内容便是 `input` 与 `textarea`
 
 > `contenteditable` 属性，也能让我们在很多标签中，如 `div`, `table`, `p`, `span` 等，可以像 `input` 输入框一样，实现文本编辑。
 
-## 三种不同的表现形式
+## 到底哪三种
 ### block
 > 每次换行浏览器会默认往元素内部一直叠加 `div` 标签
 > 外框会布满整个元素
@@ -36,7 +41,14 @@ excerpt: 最近在工作上使用到了这个属性，那就在这简单的记�
 <style
   contenteditable="true"
   placeholder=""
-  style="display: inline-block; height: 20vh; width: 100%; margin-top: 16px; outline: 1px solid pink;"
+  style="
+    display: inline-block;
+    margin-top: 16px;
+    padding: 4px;
+    outline: 1px solid black;
+    height: 20vh;
+    width: 100%;
+  "
 ></style>
 
 > 揭秘 —— 其实很简单，就是把 style 标签变得可以输入文字，就这么简单 `🕶️ 🕶️ 🕶️`
@@ -44,7 +56,14 @@ excerpt: 最近在工作上使用到了这个属性，那就在这简单的记�
 ```html
 <style 
   contenteditable="true"
-  style="display: inline-block; height: 20vh; width: 100%; margin-top: 16px; outline: 1px solid pink;"
+  style="
+    display: inline-block;
+    margin-top: 16px;
+    padding: 4px;
+    outline: 1px solid black;
+    height: 20vh;
+    width: 100%;
+  "
 ></style>
 ```
 
