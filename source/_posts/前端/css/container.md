@@ -28,7 +28,7 @@ excerpt: 在响应式布局布局中，经常使用媒体查询（Media Queries�
 >
 > 如果你现在使用到的浏览器版本达到了使用的前提，可以去尝试一下！！
 
-![container](/assets/images/container/container.jpg)
+![container](/assets/images/compatible/container.jpg)
 
 ## @container 规则使用
 > 如果你希望能够根据这个元素自身大小来进行布局，那么可以用到 @container 规则了。
