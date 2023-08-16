@@ -17,6 +17,7 @@ excerpt: css3 画图
 > 有 5 个参数，分别对应 `top`, `right`, `bottom`, `left`, `round radius`
 > 可以按 F12 检测元素，查看 `粉色` 方块的结构
 <div style="width: 100%; aspect-ratio: 5 / 1; background: pink; clip-path: inset(20% 10% 2% 10% round 12px)"></div>
+
 ```scss
 .div {
   clip-path: inset(2px 4px 6px 10px round 4px)
