@@ -108,7 +108,7 @@ deploy:
     message: docs一键部署
   - type: git
     branch: gh-pages
-    repo: https://super-zihao.gitee.io/blog
+    repo: https://gitee.com/Super-ZiHao/blog
     message: docs一键部署
 
 all_minifier: true # 打包压缩插件使用 hexo-all-minifier
