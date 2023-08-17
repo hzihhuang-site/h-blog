@@ -102,10 +102,14 @@ theme: redefine
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  branch: gh-pages
-  repo: https://github.com/Super-ZiHao/blog
-  message: docs一键部署
+  - type: git
+    branch: gh-pages
+    repo: https://github.com/Super-ZiHao/blog
+    message: docs一键部署
+  - type: git
+    branch: gh-pages
+    repo: https://super-zihao.gitee.io/blog
+    message: docs一键部署
 
 all_minifier: true # 打包压缩插件使用 hexo-all-minifier
 image_minifier:
