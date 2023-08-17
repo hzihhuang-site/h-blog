@@ -12,14 +12,17 @@ excerpt: 在写博客过程中，因为 github 访问网速问题，想要将仓
 
 ## 1、copy
 > 要先同步 gitee 和 github 仓库的代码
->
-> 直接在 gitee 登陆自己账号新建仓库就好了。
-
+### gitee 新建仓库导入
 ![gitee](/assets/images/compatible/gitee_import.png)
-
+选择 github 导入或者，复制新地址
 ![gitee](/assets/images/compatible/gitee_import2.png)
 
+### 如果是从其他仓库导入 github 同理
+![github](/assets/images/compatible/github_import.png)
+选择 github 导入或者，复制新地址
+![github](/assets/images/compatible/github_import2.png)
 ## 2、修改 .git 文件
+### 手动
 > 找到本地项目的 .git 文件夹内的 config 文件，并打开。
 > 添加一行 url = 新的仓库地址, 后保存。
 
@@ -29,3 +32,13 @@ excerpt: 在写博客过程中，因为 github 访问网速问题，想要将仓
 	url = https://gitee.com/Super-ZiHao/blog.git 
 	fetch = +refs/heads/*:refs/remotes/origin/*
 ```
+
+### 命令行
+> git remote -v
+> 查看当前 pull 和 push 的分支
+
+> git remote set-url --add origin 仓库地址
+> 增加一条 push 的仓库
+
+
+到这里，之后每次 push 都会同时提交给两个仓库了 `🕶️`
