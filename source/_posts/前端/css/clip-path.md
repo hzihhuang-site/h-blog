@@ -1,10 +1,10 @@
 ---
-title: CSS3 clip-path
+title: CSS3 clip-path 裁剪路径
 tags: [Style]
 categories: [前端, CSS]
 cover: https://img0.baidu.com/it/u=2653173828,153052962&fm=253&fmt=auto&app=138&f=JPEG?w=947&h=500
 date: 2023-08-16 15:40:00
-excerpt: css3 画图
+excerpt: 使用 clip-path 实现一些简单的图案
 ---
 ## 兼容性
 ![container](/assets/images/compatible/clip-path.png)
