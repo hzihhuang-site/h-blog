@@ -148,14 +148,10 @@ plugins:
         cover: https://p1.music.126.net/gKb2PcbOKD6u89yRt_9HrQ==/109951165347972122.jpg?param=130y130
       - name: 夜色滚烫
         artist: 烦烦
-        url: /blog/backgroundMusics/夜色滚烫.mp3
+        url: /blog/assets/backgroundMusics/夜色滚烫.mp3
         cover: https://p2.music.126.net/UNQ0zGmQEhaIwh2ngGmaqw==/109951167964721730.jpg?param=177y177
       # - name:
       #   artist:
-      #   url: 
-      #   cover:
-      # - name: 
-      #   artist: 
       #   url: 
       #   cover:
 
