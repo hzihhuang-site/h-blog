@@ -10,7 +10,7 @@ excerpt: 在写博客过程中，因为 github 访问网速问题，想要将仓
 > 最近在写博客过程中，因为 **`github`** 访问网速问题，需要将仓库移动到 **`gitee`** 但是我又想保持以前 **`github`** 仓库继续更新，维持 **`GitHubPage`** 部署最新页面。
 
 
-## 1、copy
+## 同步
 > 要先同步 gitee 和 github 仓库的代码
 ### gitee 新建仓库导入
 ![gitee](/assets/images/compatible/gitee_import.png)
@@ -41,4 +41,5 @@ excerpt: 在写博客过程中，因为 github 访问网速问题，想要将仓
 > 增加一条 push 的仓库
 
 
-到这里，之后每次 push 都会同时提交给两个仓库了 `🕶️`
+到这里设置完后，之后每次 push 都会同时提交给两个仓库了。
+此方法对其他仓库同效。
