@@ -130,6 +130,8 @@ comment:
 # 自定义样式
 inject:
   enable: true
+  head:
+    - <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.7.9/vue.js"></script>
   footer: 
     - <link rel="stylesheet" href="/blog/assets/css/footer.css?1" />
 

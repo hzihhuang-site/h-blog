@@ -10,6 +10,7 @@
       color: #000;
     }
     .grid {
+      width: 100%;
       display: flex;
       flex-wrap: wrap;
       gap: 16px;
@@ -21,6 +22,7 @@
       justify-content: center;
       gap: 8px;
       padding: 0 12px;
+      min-width: 140px;
       height: 64px;
       text-decoration: none;
       color: #000;
@@ -30,54 +32,86 @@
       box-shadow: var(--shadow-color-2) 0px 6px 24px 0px,var(--shadow-color-1) 0px 0px 0px 1px;
       border-radius: 10px;
     }
-
     .item:hover {
       transform: translateY(-6px);
     }
-
-    .item > img {
+    .item-svg,
+    .item-img {
+      flex-shrink: 0;
       width: 32px;
-      max-width: 32px;
-      margin: unset;
+      height: 32px;
+    }
+    .item-img {
+      background: url('') no-repeat left top;
+      background-size: 100% 100%;
+    }
+    .item-text {
+      font-size: 20px;
+      line-height: 20px;
       flex-shrink: 0;
     }
-    .item > span {
-      flex-shrink: 0;
+
+    .desc-item {
+      padding: 0px;
+      flex-direction: column;
+      min-width: 200px;
+      height: 100px;
+    }
+    .desc-item .title {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      height: 32px;
+    }
+    .desc {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      padding: 0 8px;
+      box-sizing: border-box;
+      width: 100%;
+      border-top: 1px solid var(--fourth-text-color);
+      font-size: 14px;
+      line-height: 14px;
+      font-weight: 400;
+      text-align: center;
+      color: #636261;
     }
   </style>
 </head>
 <body>
-  <h2>框架</h2>
-  <div class="grid">
-    <a class="item" href="https://cn.vuejs.org/">
-      <svg viewBox="0 0 128 128" width="32" height="32" data-v-c0161dce=""><path fill="#42b883" d="M78.8,10L64,35.4L49.2,10H0l64,110l64-110C128,10,78.8,10,78.8,10z" data-v-c0161dce=""></path><path fill="#35495e" d="M78.8,10L64,35.4L49.2,10H25.6L64,76l38.4-66H78.8z" data-v-c0161dce=""></path></svg>
-      <span>Vue</span>
-    </a>
-    <a class="item" href="https://react.docschina.org/">
-      <svg width="32" height="32" viewBox="-10.5 -9.45 21 18.9" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="0" cy="0" r="2" fill="#85d8f3"></circle>
-          <g stroke="#85d8f3" stroke-width="1" fill="none">
-            <ellipse rx="10" ry="4.5"></ellipse><ellipse rx="10" ry="4.5" transform="rotate(60)"></ellipse>
-            <ellipse rx="10" ry="4.5" transform="rotate(120)"></ellipse>
-          </g>
-      </svg>
-      <span>React</span>
-    </a>
-    <a class="item" href="https://angular.cn/">
-      <img src="https://angular.cn/assets/images/logos/angular/angular.svg" alt="">
-      <span style="margin-left: -8px;">ngular</span>
-    </a>
-    <a class="item" href="https://docs.nestjs.cn/">
-      <img src="https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg" alt="">
-      <span>Nestjs</span>
-    </a>
-    <a class="item" href="https://taro.jd.com/">
-      <img src="/blog/assets/images/slit-collection/taro-logo.png" alt="">
-      <span>Taro</span>
-    </a>
-    <a class="item" href="https://www.dcloud.io/">
-      <img style="width: auto; height: 60%; max-width: unset;" src="https://web-assets.dcloud.net.cn/unidoc/zh/logo.png" alt="">
-    </a>
+  <div id="app">
+    <h2>框架</h2>
+    <div class="grid">
+      <a class="item" v-for="item in frameworks" :href="item.href" target="_blank">
+        <div class="item-svg" v-if="!!item.svg" v-html="item.svg"></div>
+        <div class="item-img" v-if="!!item.url" :style="{backgroundImage: `url(${item.url})`, ...(item.urlStyle ?? {})}"></div>
+        <span class="item-text" v-if="!!item.text" v-text="item?.text"></span>
+      </a>
+    </div>
+    <h2>工具站点</h2>
+    <div class="grid">
+      <a class="item desc-item" v-for="item in utils" :href="item.href" target="_blank">
+        <div class="title">
+          <div class="item-svg" v-if="!!item.svg" v-html="item.svg"></div>
+          <div class="item-img" v-if="!!item.url" :style="{backgroundImage: `url(${item.url})`, ...(item.urlStyle ?? {})}"></div>
+          <span class="item-text" v-if="!!item.text" v-text="item?.text"></span>
+        </div>
+        <div class="desc" v-text="item.desc"></div>
+      </a>
+    </div>
   </div>
+  <script data-swup-reload-script type="module">
+    import { utils, frameworks } from './data.js';
+    new Vue({
+      el: '#app',
+      data: {
+        // 框架
+        frameworks,
+        utils,
+      },
+    })
+  </script>
 </body>
 </html>
