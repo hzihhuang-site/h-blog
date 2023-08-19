@@ -10,26 +10,39 @@
       color: #000;
     }
     .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-      grid-template-rows: auto;
-      gap: 8px;
-      justify-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
     }
     .item {
+      flex: 1;
       display: flex;
       align-items: center;
-      justify-content: start;
-      padding-left: 12px;
+      justify-content: center;
       gap: 8px;
-
-      border: 1px solid red;
-      border-radius: 8px;
-      width: 100%;
-      aspect-ratio: 5 / 2;
+      padding: 0 12px;
+      height: 64px;
       text-decoration: none;
       color: #000;
       font-size: 24px;
+      transition: all .2s;
+
+      box-shadow: var(--shadow-color-2) 0px 6px 24px 0px,var(--shadow-color-1) 0px 0px 0px 1px;
+      border-radius: 10px;
+    }
+
+    .item:hover {
+      transform: translateY(-6px);
+    }
+
+    .item > img {
+      width: 32px;
+      max-width: 32px;
+      margin: unset;
+      flex-shrink: 0;
+    }
+    .item > span {
+      flex-shrink: 0;
     }
   </style>
 </head>
@@ -37,17 +50,34 @@
   <h2>框架</h2>
   <div class="grid">
     <a class="item" href="https://cn.vuejs.org/">
-      <svg class="logo" viewBox="0 0 128 128" width="32" height="32" data-v-c0161dce=""><path fill="#42b883" d="M78.8,10L64,35.4L49.2,10H0l64,110l64-110C128,10,78.8,10,78.8,10z" data-v-c0161dce=""></path><path fill="#35495e" d="M78.8,10L64,35.4L49.2,10H25.6L64,76l38.4-66H78.8z" data-v-c0161dce=""></path></svg>
+      <svg viewBox="0 0 128 128" width="32" height="32" data-v-c0161dce=""><path fill="#42b883" d="M78.8,10L64,35.4L49.2,10H0l64,110l64-110C128,10,78.8,10,78.8,10z" data-v-c0161dce=""></path><path fill="#35495e" d="M78.8,10L64,35.4L49.2,10H25.6L64,76l38.4-66H78.8z" data-v-c0161dce=""></path></svg>
       <span>Vue</span>
     </a>
     <a class="item" href="https://react.docschina.org/">
-      <svg width="32" height="32" viewBox="-10.5 -9.45 21 18.9" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-sm me-0 w-10 h-10 text-link dark:text-link-dark flex origin-center transition-all ease-in-out"><circle cx="0" cy="0" r="2" fill="currentColor"></circle><g stroke="currentColor" stroke-width="1" fill="none"><ellipse rx="10" ry="4.5"></ellipse><ellipse rx="10" ry="4.5" transform="rotate(60)"></ellipse><ellipse rx="10" ry="4.5" transform="rotate(120)"></ellipse></g></svg>
+      <svg width="32" height="32" viewBox="-10.5 -9.45 21 18.9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="0" cy="0" r="2" fill="#85d8f3"></circle>
+          <g stroke="#85d8f3" stroke-width="1" fill="none">
+            <ellipse rx="10" ry="4.5"></ellipse><ellipse rx="10" ry="4.5" transform="rotate(60)"></ellipse>
+            <ellipse rx="10" ry="4.5" transform="rotate(120)"></ellipse>
+          </g>
+      </svg>
       <span>React</span>
     </a>
-    <a class="item" href="https://react.docschina.org/">
-      <img width="60%" src="https://angular.cn/assets/images/logos/angular/logo-nav@2x.png" alt="">
+    <a class="item" href="https://angular.cn/">
+      <img src="https://angular.cn/assets/images/logos/angular/angular.svg" alt="">
+      <span style="margin-left: -8px;">ngular</span>
+    </a>
+    <a class="item" href="https://docs.nestjs.cn/">
+      <img src="https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg" alt="">
+      <span>Nestjs</span>
+    </a>
+    <a class="item" href="https://taro.jd.com/">
+      <img src="/blog/assets/images/slit-collection/taro-logo.png" alt="">
+      <span>Taro</span>
+    </a>
+    <a class="item" href="https://www.dcloud.io/">
+      <img style="width: auto; height: 60%; max-width: unset;" src="https://web-assets.dcloud.net.cn/unidoc/zh/logo.png" alt="">
     </a>
   </div>
-  <h2>打包工具</h2>
 </body>
 </html>
