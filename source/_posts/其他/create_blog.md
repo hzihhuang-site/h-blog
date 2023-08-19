@@ -3,6 +3,7 @@ title: 关于如何创建个人博客这件事。
 categories: [其他, 杂项]
 date: 2023-08-18 16:14:00
 excerpt: 响应好兄弟号召，出一篇关于这次博客的搭建过程。
+cover: https://images.pexels.com/photos/58997/pexels-photo-58997.jpeg?auto=compress&cs=tinysrgb&h=400
 ---
 
 ## 关于工具库

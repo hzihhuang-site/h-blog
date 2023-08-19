@@ -4,6 +4,7 @@ tags: [git]
 categories: [其他, git]
 date: 2023-08-17 14:30:00
 excerpt: 在写博客过程中，因为 github 访问网速问题，想要将仓库移动到 gitee 又想保持以前 github 仓库继续更新...
+cover: https://images.pexels.com/photos/257540/pexels-photo-257540.jpeg?auto=compress&cs=tinysrgb&h=400
 ---
 
 ## 背景
