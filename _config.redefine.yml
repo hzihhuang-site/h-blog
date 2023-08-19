@@ -45,6 +45,7 @@ navbar:
       submenus:
         特色组件: https://super-zihao.github.io/HDesign
         照片墙: /masonry/
+        站点集合: /site-collection/
 
 # 首页
 home:

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>一些站点的集合点</title>
+  <style>
+    a:link {
+      text-decoration: none;
+      color: #000;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      grid-template-rows: auto;
+      gap: 8px;
+      justify-items: center;
+    }
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      padding-left: 12px;
+      gap: 8px;
+
+      border: 1px solid red;
+      border-radius: 8px;
+      width: 100%;
+      aspect-ratio: 5 / 2;
+      text-decoration: none;
+      color: #000;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <h2>框架</h2>
+  <div class="grid">
+    <a class="item" href="https://cn.vuejs.org/">
+      <svg class="logo" viewBox="0 0 128 128" width="32" height="32" data-v-c0161dce=""><path fill="#42b883" d="M78.8,10L64,35.4L49.2,10H0l64,110l64-110C128,10,78.8,10,78.8,10z" data-v-c0161dce=""></path><path fill="#35495e" d="M78.8,10L64,35.4L49.2,10H25.6L64,76l38.4-66H78.8z" data-v-c0161dce=""></path></svg>
+      <span>Vue</span>
+    </a>
+    <a class="item" href="https://react.docschina.org/">
+      <svg width="32" height="32" viewBox="-10.5 -9.45 21 18.9" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-sm me-0 w-10 h-10 text-link dark:text-link-dark flex origin-center transition-all ease-in-out"><circle cx="0" cy="0" r="2" fill="currentColor"></circle><g stroke="currentColor" stroke-width="1" fill="none"><ellipse rx="10" ry="4.5"></ellipse><ellipse rx="10" ry="4.5" transform="rotate(60)"></ellipse><ellipse rx="10" ry="4.5" transform="rotate(120)"></ellipse></g></svg>
+      <span>React</span>
+    </a>
+    <a class="item" href="https://react.docschina.org/">
+      <img width="60%" src="https://angular.cn/assets/images/logos/angular/logo-nav@2x.png" alt="">
+    </a>
+  </div>
+  <h2>打包工具</h2>
+</body>
+</html>
