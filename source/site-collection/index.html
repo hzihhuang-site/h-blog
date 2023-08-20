@@ -7,7 +7,6 @@
   <style>
     a:link {
       text-decoration: none;
-      color: #000;
     }
     .grid {
       width: 100%;
@@ -81,11 +80,9 @@
       font-size: 14px;
       font-weight: 400;
       text-align: center;
-      color: #636261;
-
-      
     }
     .desc > span{
+      color: #636261;
       display: -webkit-box;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -96,62 +93,37 @@
 </head>
 <body>
   <div id="app">
-    <h2>框架</h2>
-    <div class="grid">
-      <a class="item" v-for="item in frameworks" :href="item.href" target="_blank">
-        <div class="item-svg" v-if="!!item.svg" v-html="item.svg"></div>
-        <div class="item-img" v-if="!!item.url" :style="{backgroundImage: `url(${item.url})`, ...(item.urlStyle ?? {})}"></div>
-        <span class="item-text" v-if="!!item.text" v-text="item?.text"></span>
-      </a>
-    </div>
-    <h2>CSS</h2>
-    <div class="grid">
-      <a class="item desc-item" v-for="item in CSS" :href="item.href" target="_blank">
-        <div class="title">
-          <div class="item-svg" v-if="!!item.svg" v-html="item.svg"></div>
-          <div class="item-img" v-if="!!item.url" :style="{backgroundImage: `url(${item.url})`, ...(item.urlStyle ?? {})}"></div>
-          <span class="item-text" v-if="!!item.text" v-text="item?.text"></span>
-        </div>
-        <div class="desc">
-          <span v-text="item.desc" :title="item.desc"></span>
-        </div>
-      </a>
-    </div>
-    <h2>组件库</h2>
-    <div class="grid">
-      <a class="item desc-item" v-for="item in components" :href="item.href" target="_blank">
-        <div class="title">
-          <div class="item-svg" v-if="!!item.svg" v-html="item.svg"></div>
-          <div class="item-img" v-if="!!item.url" :style="{backgroundImage: `url(${item.url})`, ...(item.urlStyle ?? {})}"></div>
-          <span class="item-text" v-if="!!item.text" v-text="item?.text"></span>
-        </div>
-        <div class="desc">
-          <span v-text="item.desc" :title="item.desc"></span>
-        </div>
-      </a>
-    </div>
-    <h2>工具站点</h2>
-    <div class="grid">
-      <a class="item desc-item" v-for="item in utils" :href="item.href" target="_blank">
-        <div class="title">
-          <div class="item-svg" v-if="!!item.svg" v-html="item.svg"></div>
-          <div class="item-img" v-if="!!item.url" :style="{backgroundImage: `url(${item.url})`, ...(item.urlStyle ?? {})}"></div>
-          <span class="item-text" v-if="!!item.text" v-text="item?.text"></span>
-        </div>
-        <div class="desc" v-text="item.desc" :title="item.desc"></div>
-      </a>
-    </div>
+    <template v-for="data in dataList">
+      <h2 v-text="data.title"></h2>
+      <div class="grid">
+        <a :class="`item ${data.hasDetails ? 'desc-item' : ''}`" v-for="item in data.data" :href="item.href" target="_blank">
+          <!-- 无详情 -->
+          <template v-if="!data.hasDetails">
+            <div class="item-svg" v-if="!!item.svg" v-html="item.svg"></div>
+            <div class="item-img" v-if="!!item.url" :style="{backgroundImage: `url(${item.url})`, ...(item.urlStyle ?? {})}"></div>
+            <span class="item-text" v-if="!!item.text" v-text="item?.text"></span>
+          </template>
+          <!-- 带有详情 -->
+          <template v-else>
+            <span class="title">
+              <span class="item-svg" v-if="!!item.svg" v-html="item.svg"></span>
+              <span class="item-img" v-if="!!item.url" :style="{backgroundImage: `url(${item.url})`, ...(item.urlStyle ?? {})}"></span>
+              <span class="item-text" v-if="!!item.text" v-text="item?.text"></span>
+            </span>
+            <div class="desc">
+              <span v-text="item.desc" :title="item.desc"></span>
+            </div>
+          </template>
+        </a>
+      </div>
+    </template>
   </div>
   <script data-swup-reload-script type="module">
-    import { utils, frameworks, CSS, components } from './data.js';
+    import dataList from './data.js';
     new Vue({
       el: '#app',
       data: {
-        // 框架
-        frameworks,
-        utils,
-        CSS,
-        components
+        dataList,
       },
     })
   </script>

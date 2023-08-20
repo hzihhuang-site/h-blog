@@ -28,23 +28,31 @@ colors:
 navbar:
   auto_hide: false # 顶部是否自动隐藏
   links:
-    归档:
-      icon: fa-regular fa-archive
-      path: /archives/
-    标签:
-      icon: fa-regular fa-tags
-      path: /tags/
-    分类:
-      icon: fa-regular fa-folder
-      path: /categories/
+    # 归档:
+    #   icon: fa-regular fa-archive
+    #   path: 
+    # 标签:
+    #   icon: fa-regular fa-tags
+    #   path: 
+    # 分类:
+    #   icon: fa-regular fa-folder
+    #   path: 
+    站点:
+      icon: fa-regular fa-sitemap
+      path: /site-collection/
     关于我:
       icon: fa-regular fa-user
       path: /about/
+    文章:
+      icon: fa-regular fa-newspaper
+      submenus:
+        归档: /archives/
+        标签: /tags/
+        分类: /categories/
     其他:
       icon: fa-solid fa-link
       submenus:
         特色组件: https://super-zihao.github.io/HDesign
-        站点: /site-collection/
         照片墙: /masonry/
 
 # 首页
