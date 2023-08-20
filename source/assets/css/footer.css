@@ -14,3 +14,8 @@
 .navbar-content .right {
   white-space: nowrap;
 }
+
+/* tag 页面模糊关闭 */
+.tagcloud-container .tagcloud-content .tag-list > li > a {
+  --blur: 0 !important;
+}
