@@ -142,6 +142,7 @@ inject:
   enable: true
   head:
     - <script async src="https://cdn.bootcdn.net/ajax/libs/vue/2.7.9/vue.min.js"></script>
+    - <script async src="/blog/assets/js/mouse.js""></script>
   footer: 
     - <link rel="stylesheet" href="/blog/assets/css/footer.css?1" />
 
