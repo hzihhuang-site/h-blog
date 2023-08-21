@@ -1,14 +1,12 @@
-/* 隐藏 footer 左侧 */
-.info-item.theme-info {
+/* 隐藏 footer */
+.relative.text-center.lg\:absolute.lg\:text-left,
+.relative.text-center.lg\:absolute.lg\:top-1\/2.lg\:-translate-y-1\/2.lg\:text-right{
   display: none;
 }
 .footer {
-  padding-left: 20px;
+  padding: 0 !important;
 }
-.footer .copyright-info,
-.footer div:last-child {
-  text-align: left;
-}
+
 
 /* 头部 navbar 文案不换行 */
 .navbar-content .right {

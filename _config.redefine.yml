@@ -8,6 +8,8 @@ global:
     bar: true
   busuanzi_counter:
     enable: false
+    site_pv: false
+    site_uv: false
 
 # 基本信息
 info:
@@ -139,7 +141,7 @@ comment:
 inject:
   enable: true
   head:
-    - <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.7.9/vue.js"></script>
+    - <script async src="https://cdn.bootcdn.net/ajax/libs/vue/2.7.9/vue.min.js"></script>
   footer: 
     - <link rel="stylesheet" href="/blog/assets/css/footer.css?1" />
 
