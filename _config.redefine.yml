@@ -42,6 +42,9 @@ navbar:
     站点:
       icon: fa-regular fa-sitemap
       path: /site-collection/
+    日记本:
+      icon: fa-regular fa-book
+      path: /essays/
     关于我:
       icon: fa-regular fa-user
       path: /about/

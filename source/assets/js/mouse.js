@@ -15,7 +15,8 @@ document.body.addEventListener('mousemove', (e) => {
     'image-container', // 瀑布流图片
     'aplayer-pic', // 音乐播放器
     'aplayer-icon',
-    'aplayer-list'
+    'aplayer-list',
+    'go-comment', // 文章右侧去详情按钮
   ]
   const other = classList.some(className => nodes.some(item => item?.classList?.contains(className)))
 

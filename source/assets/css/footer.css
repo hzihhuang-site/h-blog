@@ -5,6 +5,7 @@
 }
 
 /* 头部 navbar 文案不换行 */
+.logo-title,
 .navbar-content .right {
   white-space: nowrap;
 }
@@ -73,6 +74,7 @@ a,
 .paginator span.page-number, /* 分页器 */
 .image-container img, /* 瀑布流图片 */
 .image-viewer-container img,
+.go-comment, /* 文章右侧去评论按钮 */
 .aplayer-pic, /* 音乐播放器 */
 .aplayer-icon,
 .aplayer-list > ol > li,
