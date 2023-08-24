@@ -202,3 +202,95 @@ cursor.onsuccess = function(e) {
 
 ## [dexie.js](https://dexie.org/)
 > 对 indexedDB 封装的一个库，能够让我们向 jquery 一样链式调用，省去了维护各种异步事件操作的时间。支持 `TypeScript`、`React`、`Angular`、`Svelte`
+>
+> 以 `React` 为例操作一遍
+### 创建
+> 这里创建了一个名叫 `mydb` 的数据库，版本为 `1`，里面有一个表 `fristTable`，表内容规定为一个有 `id`，`name`，`age` 三个属性的对象，且 `id` 自增
+```js
+// db.js
+import Dexie from 'dexie';
+
+// 导出给其他地方使用
+export const db = new Dexie('mydb');
+
+db.version(1).stores({
+  fristTable: '++id, name, age',
+})
+```
+> 如果使用的是 `typescript` 需要类型支持可以这样写
+```ts
+// db.ts
+import Dexie, { Table } from 'dexie';
+
+export interface FristTableType {
+  id?: number;
+  name: string;
+  age: number;
+}
+
+export class MyDexieDB extends Dexie {
+  friends!: Table<FristTableType>; // 绑定表类型 
+
+  constructor() {
+    super('mydb'); // 定义数据库名字
+    this.version(1).stores({
+      friends: '++id, name, age'
+    });
+  }
+}
+
+export const db = new MyDexieDB();
+```
+
+### 添加数据
+> 因为上面定义表的时候使用的是自增的 `id` 所以你可以不需要传入 `id`，按照整数自增下去，该与表中 `key` 一一对应 
+> 也可以传递 `id`，会做对比，如果当前表中没有该 `id`,那么添加成功，否则添加失败
+```tsx
+import { db } from './db.ts';
+const Demo = () => {
+  const handleAdd = () => {
+    db.fristTable.add({
+      name: 'zihao',
+      age: 18
+    }).then().catch()
+  }
+  return (
+    <div onClick={handleAdd}>123</div>
+  )
+}
+```
+
+### 查询数据
+> 查询 id 为 key 的数据
+```tsx
+import { db } from './db.ts';
+const Demo = () => {
+  const handleGet =() => {
+    db.fristTable
+      .get(key)
+      .then(res => console.log(res))
+      .catch()
+  }
+  return (
+    <div onClick={handleGet}>123</div>
+  )
+}
+```
+
+### 筛选数据
+> 筛选出 10 <= id < 20 区间的所有数据
+```tsx
+import { db } from './db.ts';
+const Demo = () => {
+  const handleGet =() => {
+    db.fristTable
+      .where('id')
+      .between(10, 20)
+      .then(res => console.log(res))
+      .catch()
+  }
+  return (
+    <div onClick={handleGet}>123</div>
+  )
+}
+```

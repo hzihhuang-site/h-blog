@@ -30,15 +30,6 @@ colors:
 navbar:
   auto_hide: false # 顶部是否自动隐藏
   links:
-    # 归档:
-    #   icon: fa-regular fa-archive
-    #   path: 
-    # 标签:
-    #   icon: fa-regular fa-tags
-    #   path: 
-    # 分类:
-    #   icon: fa-regular fa-folder
-    #   path: 
     站点:
       icon: fa-regular fa-sitemap
       path: /site-collection/
@@ -167,9 +158,5 @@ plugins:
         artist: 烦烦
         url: /blog/assets/backgroundMusics/夜色滚烫.mp3
         cover: https://p2.music.126.net/UNQ0zGmQEhaIwh2ngGmaqw==/109951167964721730.jpg?param=177y177
-      # - name:
-      #   artist:
-      #   url: 
-      #   cover:
 
         
