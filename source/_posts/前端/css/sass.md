@@ -5,7 +5,7 @@ categories: [前端, CSS]
 cover: https://img1.baidu.com/it/u=1590939100,312674939&fm=253&fmt=auto&app=138&f=GIF
 date: 2022-03-16 8:00:47
 excerpt: SASS（Syntactically Awesome Stylesheet）是一个CSS预处理器，有助于减少CSS的重复，节省时间。它是更稳定和强大的CSS扩展语言，描述文档的样式干净和结构。
-sticky: 100
+sticky: 1
 ---
 ## 一、注释
 
