@@ -1,26 +1,5 @@
 const dataList = [
   {
-    title: '打包工具',
-    hasDetails: false,
-    data: [
-      {
-        href: 'https://cn.vitejs.dev/',
-        url: 'https://cn.vitejs.dev/logo-with-shadow.png',
-        text: 'Vite'
-      },
-      {
-        href: 'https://webpack.docschina.org/',
-        url: 'https://webpack.docschina.org/site-logo.1fcab817090e78435061.svg',
-        urlStyle: { width: 'auto', height: '70%', aspectRatio: '121 / 35' },
-      },
-      {
-        href: 'https://cn.rollupjs.org/',
-        url: 'https://cn.rollupjs.org/rollup-logo.svg',
-        text: 'Rollup'
-      }
-    ]
-  },
-  {
     title: '框架',
     hasDetails: false,
     data: [
@@ -136,6 +115,27 @@ const dataList = [
         href: 'https://animate.style/',
         text: 'Animate',
         desc: 'CSS 动画库'
+      }
+    ]
+  },
+  {
+    title: '打包工具',
+    hasDetails: false,
+    data: [
+      {
+        href: 'https://cn.vitejs.dev/',
+        url: 'https://cn.vitejs.dev/logo-with-shadow.png',
+        text: 'Vite'
+      },
+      {
+        href: 'https://webpack.docschina.org/',
+        url: 'https://webpack.docschina.org/site-logo.1fcab817090e78435061.svg',
+        urlStyle: { width: 'auto', height: '70%', aspectRatio: '121 / 35' },
+      },
+      {
+        href: 'https://cn.rollupjs.org/',
+        url: 'https://cn.rollupjs.org/rollup-logo.svg',
+        text: 'Rollup'
       }
     ]
   },
