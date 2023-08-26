@@ -1,5 +1,26 @@
 const dataList = [
   {
+    title: '打包工具',
+    hasDetails: false,
+    data: [
+      {
+        href: 'https://cn.vitejs.dev/',
+        url: 'https://cn.vitejs.dev/logo-with-shadow.png',
+        text: 'Vite'
+      },
+      {
+        href: 'https://webpack.docschina.org/',
+        url: 'https://webpack.docschina.org/site-logo.1fcab817090e78435061.svg',
+        urlStyle: { width: 'auto', height: '70%', aspectRatio: '121 / 35' },
+      },
+      {
+        href: 'https://cn.rollupjs.org/',
+        url: 'https://cn.rollupjs.org/rollup-logo.svg',
+        text: 'Rollup'
+      }
+    ]
+  },
+  {
     title: '框架',
     hasDetails: false,
     data: [
@@ -18,6 +39,16 @@ const dataList = [
         url: 'https://angular.cn/assets/images/logos/angular/angular.svg',
         urlStyle: { marginRight: '-8px' },
         text: 'ngular',
+      },
+      {
+        href: 'https://www.nextjs.cn/',
+        url: 'https://www.nextjs.cn/static/images/nextjs-logo.png',
+        urlStyle: { width: 'auto', height: '60%', aspectRatio: '90 / 58' },
+      },
+      {
+        href: 'https://umijs.org/',
+        url: 'https://gw.alipayobjects.com/zos/bmw-prod/598d14af-4f1c-497d-b579-5ac42cd4dd1f/k7bjua9c_w132_h130.png',
+        text: 'UmiJS'
       },
       {
         href: 'https://docs.nestjs.cn/',
@@ -43,6 +74,11 @@ const dataList = [
         href: 'https://beta.tauri.app/zh-cn/',
         url: 'https://beta.tauri.app/_astro/logo.1cdda0ad.svg',
         urlStyle: { width: 'auto', height: '50%', aspectRatio: '126 / 40' },
+      },
+      {
+        href: 'https://d.umijs.org/',
+        url: 'https://gw.alipayobjects.com/zos/bmw-prod/d3e3eb39-1cd7-4aa5-827c-877deced6b7e/lalxt4g3_w256_h256.png',
+        text: 'dumi'
       }
     ]
   },
@@ -104,12 +140,12 @@ const dataList = [
     ]
   },
   {
-    title: '工具',
+    title: '代码工具',
     hasDetails: true,
     data: [
       {
         href: 'https://picsum.photos/',
-        text: 'Lorem Picsum',
+        text: 'Picsum',
         desc: '可以根据指定的尺寸返回随机图片，适用于 mock'
       },
       {
@@ -123,6 +159,47 @@ const dataList = [
         url: 'https://www.bootcdn.cn/assets/img/logo.png',
         urlStyle: { width: 'auto', height: '48%', aspectRatio: '120 / 20' },
         desc: '各种 npm 包的 cdn 形式',
+      },
+      {
+        href: 'https://www.json.cn/',
+        text: 'Json.cn',
+        desc: 'json 解析和格式化'
+      },
+      {
+        href: 'https://codepen.io',
+        text: 'CodePen',
+        desc: '一个方便自己写前端小 demo 的网站'
+      },
+      {
+        href: 'https://matthewlein.com/tools/ceaser',
+        text: '贝塞尔曲线',
+        desc: '图形化生成贝塞尔曲线'
+      },
+      {
+        href: 'https://wangwl.net/static/projects/visualRegex',
+        text: 'visualRegex',
+        desc: '正则可视化'
+      },
+      {
+        href: 'https://unbug.github.io/codelf/',
+        text: 'CODELF',
+        desc: '变量命名'
+      },
+    ]
+  },
+  {
+    title: '其他工具',
+    hasDetails: true,
+    data: [
+      {
+        href: 'https://squoosh.app/',
+        text: 'Squoosh',
+        desc: '在线图片压缩'
+      },
+      {
+        href: 'https://www.remove.bg/zh',
+        text: 'RemoveBG',
+        desc: '在线抠背景图'
       },
       {
         href: 'https://picular.co/',
@@ -145,30 +222,10 @@ const dataList = [
         desc: '背景渐变色集合',
       },
       {
-        href: 'https://matthewlein.com/tools/ceaser',
-        text: '贝塞尔曲线',
-        desc: '图形化生成贝塞尔曲线'
-      },
-      {
         href: 'https://www.toptal.com/developers/css/sprite-generator',
         url: 'https://www.toptal.com/developers/css/sprite-generator/static/images/logo_header.svg',
         urlStyle: { width: 'auto', height: '54%', aspectRatio: '160 / 56' },
         desc: '序列帧转精灵图'
-      },
-      {
-        href: 'https://unbug.github.io/codelf/',
-        text: 'CODELF',
-        desc: '变量命名'
-      },
-      {
-        href: 'https://www.json.cn/',
-        text: 'Json.cn',
-        desc: 'json 解析和格式化'
-      },
-      {
-        href: 'https://wangwl.net/static/projects/visualRegex',
-        text: 'visualRegex',
-        desc: '正则可视化'
       },
       {
         href: 'https://pagespeed.web.dev/',

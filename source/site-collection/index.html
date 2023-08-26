@@ -36,6 +36,9 @@
     }
     .item-svg,
     .item-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       flex-shrink: 0;
       width: 32px;
       height: 32px;
@@ -125,12 +128,14 @@
   </div>
   <script data-swup-reload-script type="module">
     import dataList from './data.js';
-    new Vue({
-      el: '#app',
-      data: {
-        dataList,
-      },
-    })
+    if (window.Vue) {
+      new Vue({
+        el: '#app',
+        data: {
+          dataList,
+        },
+      })
+    }
   </script>
 </body>
 </html>
