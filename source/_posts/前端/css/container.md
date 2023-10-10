@@ -31,7 +31,7 @@ excerpt: 在响应式布局布局中，经常使用媒体查询（Media Queries�
 ![container](/assets/images/compatible/container.jpg)
 
 ## @container 规则使用
-> 如果你希望能够根据这个元素自身大小来进行布局，那么可以用到 @container 规则了。
+> 如果你希望能够根据这个元素 属性是某一个 或者 尺寸区间 来进行布局，那么可以用到 @container 规则了。
 
 ### 1、使用方法 
 
@@ -102,3 +102,5 @@ excerpt: 在响应式布局布局中，经常使用媒体查询（Media Queries�
 
 ## 案例展示
 {% btn center large::一个简单的案例::https://codepen.io/hzihhuang/pen/vYVmgXr::fa-solid fa-eye %}
+
+{% btn center large::自适应比例容器展示::https://codepen.io/hzihhuang/pen/dywaVjz::fa-solid fa-eye %}

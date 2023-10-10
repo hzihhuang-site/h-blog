@@ -19,14 +19,14 @@ excerpt: 关于 CSS 实现瀑布流的几种方案和欠缺点...
 - [Pinterset](https://www.pinterest.com/)
 - [Civitai](https://civitai.com/)
 
-## JS
+## JS 实现
 > 自己写或是加载其他人已经写好的库。目前这种方式是最容易也最完美的方案
 
-**原理基本上都是通过 `JavaScript` 计算共有多少个卡片，再计算每个卡片的宽度和高度，因父容器的宽度每行放置多少个卡片等等要求。将全部卡片的 `position` 都设置成 `absolute` 逐一计算去 `top` 和 `left` 定位。**
+原理基本上都是通过 `JavaScript` 计算共有多少个卡片，再计算每个卡片的宽度和高度，因父容器的宽度每行放置多少个卡片等等要求。将全部卡片的 `position` 都设置成 `absolute` 逐一计算去 `top` 和 `left` 定位。
 
-**由于所有卡片位置都是计算出来的，所以还能在父容器宽度改变的时候，将卡片动态移动并且重新排列。**
+由于所有卡片位置都是计算出来的，所以还能在父容器宽度改变的时候，将卡片动态移动并且重新排列。
 
-**唯一的不足是因为介入了太多的计算，卡片多的时候不建议根据父元素宽度动态重新排列，否则可能会出现卡顿现象。并且由于计算需要时间完成，在完成之前卡片并未设置位置，所以基本上都堆叠在左上角了**
+唯一的不足是因为介入了太多的计算，卡片多的时候不建议根据父元素宽度动态重新排列，否则可能会出现卡顿现象。并且由于计算需要时间完成，在完成之前卡片并未设置位置，所以基本上都堆叠在左上角了
 
 
 - 原生: [Masonry.js](https://masonry.desandro.com/)、[Isotope.js](https://isotope.metafizzy.co/)
@@ -34,7 +34,7 @@ excerpt: 关于 CSS 实现瀑布流的几种方案和欠缺点...
 - Vue: [vue-waterfall](https://github.com/MopTym/vue-waterfall)、[vue-waterfall-easy](https://github.com/lfyfly/vue-waterfall-easy/tree/master)、[vue-virtual-collection](https://github.com/starkwang/vue-virtual-collection)、[vue-grid-layout](https://github.com/jbaysolutions/vue-grid-layout)
 
 
-## CSS
+## CSS 实现
 > CSS 直接支持，性能优秀。
 ### 多列布局
 ```scss

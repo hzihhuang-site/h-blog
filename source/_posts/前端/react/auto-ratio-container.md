@@ -3,8 +3,8 @@ title: 自适应比例容器组件
 tags: [组件]
 categories: [前端, React]
 cover: https://p7.itc.cn/images01/20211123/ca47074f55954f32a596141cc77aeb17.jpeg
-date: 2023-10-10 12:00:00
-excerpt: 一个能够更具元素尺寸变化并且保持自身展示比例放大缩小的 React 组件
+date: 2023-09-14 12:00:00
+excerpt: 一个能够更具元素尺寸变化并且保持自身展示比例放大缩小的 React 组件实现过程
 ---
 ## 自适应比例容器
 
@@ -255,3 +255,9 @@ const ParentElement = styled.div`
 export default AutoRatioContainer;
 ```
 
+
+## 尝鲜 —— CSS 新特性实现
+
+{% btn center large::点击查看案例::https://codepen.io/hzihhuang/pen/dywaVjz::fa-solid fa-eye %}
+
+[快速学习一下它](/blog/2023/08/14/前端/css/container)
