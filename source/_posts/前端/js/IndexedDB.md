@@ -5,7 +5,6 @@ categories: [前端, JavaScript]
 cover: https://img1.baidu.com/it/u=163326154,1068027404&fm=253&fmt=auto&app=138&f=JPEG
 date: 2023-08-21 16:46:09
 excerpt: 浏览器上的数据库
-sticky: 4
 ---
 
 ## 兼容
