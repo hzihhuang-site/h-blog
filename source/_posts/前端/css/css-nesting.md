@@ -9,7 +9,7 @@ excerpt: CSS 新语法, 现代浏览器将开始支持原生 CSS 的嵌套功能
 
 
 ## 兼容性
-![counter](/assets/images/compatible/css-nesting.jpg)
+![CSS-Nexting](/assets/images/compatible/css-nesting.jpg)
 
 ## CSS Nesting（嵌套语法）简介
 
