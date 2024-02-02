@@ -15,7 +15,7 @@ global:
 info:
   title: Yolo乀Blog
   author: hzihhuang
-  url: https://super-zihao.github.io/blog
+  url: https://super-zihao.github.io/H-Blog
 
 # 默认图片
 defaults:
@@ -120,7 +120,7 @@ comment:
   system: giscus
   config:
     giscus:
-      repo: Super-ZiHao/blog
+      repo: Super-ZiHao/H-Blog
       repo_id: R_kgDOKF8XYQ
       category: General
       category_id: DIC_kwDOKF8XYc4CYkim
@@ -137,9 +137,9 @@ inject:
   enable: true
   head:
     - <script async src="https://cdn.bootcdn.net/ajax/libs/vue/2.7.9/vue.min.js"></script>
-    - <script async src="/blog/assets/js/mouse.js""></script>
+    - <script async src="/H-Blog/assets/js/mouse.js""></script>
   footer: 
-    - <link rel="stylesheet" href="/blog/assets/css/footer.css?1" />
+    - <link rel="stylesheet" href="/H-Blog/assets/css/footer.css?1" />
 
 # 插件
 plugins:
@@ -149,15 +149,15 @@ plugins:
     audios:
       - name: 亦是此间少年
         artist: 枯木逢春
-        url: /blog/assets/backgroundMusics/亦是此间少年.mp3
+        url: /H-Bolg/assets/backgroundMusics/亦是此间少年.mp3
         cover: https://p1.music.126.net/415A5Xt3bUegx4vyiY8dNQ==/109951164821961505.jpg?param=130y130
       - name: 盐 (Witch’s Condiment)
         artist: 沈以诚
-        url: /blog/assets/backgroundMusics/盐.mp3
+        url: /H-Bolg/assets/backgroundMusics/盐.mp3
         cover: https://p1.music.126.net/gKb2PcbOKD6u89yRt_9HrQ==/109951165347972122.jpg?param=130y130
       - name: 夜色滚烫
         artist: 烦烦
-        url: /blog/assets/backgroundMusics/夜色滚烫.mp3
+        url: /H-Bolg/assets/backgroundMusics/夜色滚烫.mp3
         cover: https://p2.music.126.net/UNQ0zGmQEhaIwh2ngGmaqw==/109951167964721730.jpg?param=177y177
 
         

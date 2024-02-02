@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url:  https://super-zihao.github.io/blog/
+url:  https://super-zihao.github.io/H-Blog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -104,11 +104,11 @@ theme: redefine
 deploy:
   - type: git
     branch: gh-pages
-    repo: https://github.com/Super-ZiHao/blog
+    repo: https://github.com/Super-ZiHao/H-Blog
     message: docs一键部署
   - type: git
     branch: gh-pages
-    repo: https://gitee.com/Super-ZiHao/blog
+    repo: https://gitee.com/Super-ZiHao/H-Blog
     message: docs一键部署
 
 all_minifier: true # 打包压缩插件使用 hexo-all-minifier
