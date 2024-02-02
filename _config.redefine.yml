@@ -48,7 +48,8 @@ navbar:
     其他:
       icon: fa-solid fa-link
       submenus:
-        特色组件: https://super-zihao.github.io/HDesign
+        组件库: https://super-zihao.github.io/H-Design
+        工具箱: https://super-zihao.github.io/H-Tools
         照片墙: /masonry/
 
 # 首页
